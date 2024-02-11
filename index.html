@@ -1,108 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>NV</title>
-  
- <style>
- body{
-   background-color: #ffffffeb;
-   
- }
-   
-   header h1{
-  text-align: center ;
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVML</title>
+    
+<style type="text/css" media="all">
+    
+    
+#h1{
+  text-align: center;
+  margin: 20px;
 }
 
-.flex{
-  display :grid; 
-  grid-template-columns:auto auto auto auto ;
-  row-gap: 35px;
-  
-
-}
-.container{
-  
+.cont{
   display: flex;
-  flex-flow:column;
-  width :300px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px #B2B2B2;
+  flex-flow: column;
+  /*border: 1px solid red;*/
+  border-radius: 0px;
+  height: 400px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #bbbbbb;
 }
-.container img{
-  border-radius:10px 10px 0px 0px;
-  width :300px;
+.cont h5{
+  height:2px ;
+  text-align: center;
 }
-.container audio::-webkit-media-controls-enclosure{
-  background: none;
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  
+  
+}
+.center .flex .cont img{
+  width: 300px;
+  border-radius:0px;
 }
 
-@media screen and (max-width: 600px){
-  .flex{
-    display: flex;
-    flex-flow: column;
-    justify-content:center;
-    align-items: center;
-  }
-  .container{
-    margin-bottom: 10px;
-  }
+.center .flex .cont:hover{
+  border:none;
+  box-shadow: 4px 4px 8px #bbbbbb;
 }
+
+.center .flex .cont audio::-webkit-media-controls-enclosure{
+  background:none ;
+}
+    
+</style>
    
- </style>
-</head>
-<body>
-  
-  <header>
-   <h1>NV's Music Library</h1>
-  </header>
- 
-<div class="flex">
-  
-    <div class="container">
-      <img src="JBP.jpeg" alt="">
-       <audio controls>
-        <source src="What Do You Mean_.mp3" type="audio/mp3" />
-    </audio>
-    </div>
-  
-    <div class="container">
-      <img src="WRYN.jpeg" alt="">
+  </head>
+  <body>
+    
+  <h1 id="h1">NV's Music Library</h1>
+    
+<div class="center">
+   <div class="flex">
+      
+      <div class="cont">
+        <img src="JBP.jpeg" alt="">
+         <h5>What do you mean?</h5>
+         <audio controls>
+          <source src="What Do You Mean_.mp3" type="audio/mp3" />
+         </audio>
+        
+      </div>
+    
+      <div class="cont">
+        <img src="WRYN.jpeg" alt="">
+        <h5>Where are you now?</h5>
         <audio controls>
           <source src="Where Are Ü Now (with Justin Biebe.mp3" type="audio/mp3" />
         </audio>
-    </div>
-  
-    <div class="container">
-      <img src="Tops.jpeg" alt="">
+        
+      </div>
+      <div class="cont">
+        <img src="Tops.jpeg" alt="">
+        <h5>Stressed Out</h5>
          <audio controls>
          <source src="Stressed Out.mp3" type="audio/mp3" />
          </audio>
-    </div>
-  
-    <div class="container">
-      <img src="hills.jpeg" alt="">
+        
+      </div>
+      <div class="cont">
+        <img src="hills.jpeg" alt="">
+        <h5>The Hills</h5>
          <audio controls>
          <source src="The Hills.mp3" type="audio/mp3" />
          </audio>
-    </div>
-    
-    <div class="container">
-      <img src="woog.jpeg" alt="">
+        
+      </div>
+      <div class="cont">
+        <img src="woog.jpeg" alt="">
+        <h5>One of the girls</h5>
          <audio controls>
          <source src="One Of The Girls (with JENNIE, Lil.mp3" type="audio/mp3" />
          </audio>
-    </div>
+      </div>
+      <div class="cont">
+        <img src="lisa.jpeg" alt="">
+        <h5>Money</h5>
+         <audio controls>
+         <source src="MONEY.mp3" type="audio/mp3" />
+         </audio>
+        
+      </div>
+      <div class="cont">
+        <img src="Gh.jpeg" alt="">
+        <h5>Golden hour</h5>
+         <audio controls>
+         <source src="golden hour.mp3" type="audio/mp3" />
+         </audio>
+        
+      </div>
+      <div class="cont">
+       <img src="ootw.jpeg" alt="">
+       <h5>Out of time</h5>
+         <audio controls>
+         <source src="Out of time.mp3" type="audio/mp3" />
+         </audio>
+        
+      </div>
+      
+  
+   
+  
+  
     
-    
-    
-    
+   </div>
 </div>
-
-
-
-</body>
+  
+  
+    
+  </body>
 </html>
